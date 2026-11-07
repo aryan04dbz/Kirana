@@ -48,6 +48,9 @@ yarn-error.log*
 web/dist/
 web/dist-ssr/
 *.local
+*.tsbuildinfo
+web/vite.config.js
+web/vite.config.d.ts
 
 # IDE & OS
 .idea/
