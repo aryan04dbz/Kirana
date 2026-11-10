@@ -101,14 +101,14 @@ export const App: React.FC = () => {
     const fetchBackendData = async () => {
       setHealthLoading(true);
       try {
-        const healthRes = await fetch("http://127.0.0.1:8000/health");
+        const healthRes = await fetch("http://127.0.0.1:9000/health");
         if (healthRes.ok) {
           const healthData = await healthRes.json();
           setHealth(healthData);
         }
 
         const settingsRes = await fetch(
-          "http://127.0.0.1:8000/api/v1/settings?user_id=default_user"
+          "http://127.0.0.1:9000/api/v1/settings?user_id=default_user"
         );
         if (settingsRes.ok) {
           const settingsData = await settingsRes.json();

@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     # Server Configuration
     app_env: str = "development"
     api_host: str = "127.0.0.1"
-    api_port: int = 8000
+    api_port: int = 9000
     cors_origins: list[str] = [
         "http://localhost:5173",
         "http://127.0.0.1:5173",
